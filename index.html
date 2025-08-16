@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Trentuno</title>
+</head>
+
+<body onload>
+    <div id="nuovaPartita">
+        <div id="messaggio">
+            Clicca Nuova Partita per iniziare
+        </div>
+        <br>
+        <button onclick="inizializza()">Nuova Partita</button>
+    </div>
+    <div id="giocatore1">
+        Giocatore 1
+        <div id="giocatore1_punteggio">
+            0 punti
+        </div>
+        <div id="giocatore1_carte">
+            <button onclick = "selezionaCarta(0)"><img id="giocatore1_carta0" src="immagini/carte napoletane/retro.jpg"></img></button>
+            <button onclick = "selezionaCarta(1)"><img id="giocatore1_carta1" src="immagini/carte napoletane/retro.jpg"></img></button>
+            <button onclick = "selezionaCarta(2)"><img id="giocatore1_carta2" src="immagini/carte napoletane/retro.jpg"></img></button>
+        </div>
+    </div>
+    <br>
+    <h3>Carte rimaste nel mazzo: <label id = "numeroMazzo"></label></h3>
+    <div id="game">
+        <button onclick="scambiaConCentro()"><img id="centro" src="immagini/carte napoletane/retro.jpg"></button>
+        <button onclick="scambiaConMazzo()"><img id="mazzo" src="immagini/carte napoletane/retro.jpg"></button>
+        <button id="bussa" onclick="bussa()"><img src="immagini/bussa.jpg" width = 5%></img></button>
+    </div>
+    <br><br>
+    <div id="giocatore2">
+        Giocatore 2
+        <div id="giocatore2_punteggio">
+            0 punti
+        </div>
+        <div id="giocatore2_carte">
+            <button onclick = "selezionaCarta(0)"><img id="giocatore2_carta0" src="immagini/carte napoletane/retro.jpg"></img></button>
+            <button onclick = "selezionaCarta(1)"><img id="giocatore2_carta1" src="immagini/carte napoletane/retro.jpg"></img></button>
+            <button onclick = "selezionaCarta(2)"><img id="giocatore2_carta2" src="immagini/carte napoletane/retro.jpg"></img></button>
+        </div>
+    </div>
+    <div id="vittoria" hidden>
+        <h1 id="messaggioVittoria"></h1>
+        <button onclick="inizializza()"><h2>Nuova Partita</h2></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body {
+    background-image: url("immagini/sfondo.jpg");
+    background-size: 100%;
+    background-position: center 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#nuovaPartita {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 500%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#nuovaPartita button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2980b9;
+    font-size: 30px;
+    width: 20%;
+    height: 10%;
+}
+
+#nuovaPartita button:hover {
+    background-color: #2574a9;
+}
+
+button {
+    width: 8%;
+    aspect-ratio: 1324/2120;
+    overflow: hidden;
+    display: inline-block;
+    border: 5px solid #000;
+    margin: 0;
+    padding: 0;
+}
+
+button:hover {
+    border-color: #555;
+}
+
+button img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#round {
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+}
+
+#bussa {
+    width: 5%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#bussa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#giocatore1, #giocatore2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#giocatore1_punteggio, #giocatore2_punteggio {
+    height: 20px;
+}
+
+#giocatore1_carte, #giocatore2_carte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+#giocatore1_carte button, #giocatore2_carte button {
+    width: 8%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#giocatore1_carte button img, #giocatore2_carte button img {
+    width: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#giocatore1_carte button:hover, #giocatore2_carte button:hover, #game button:hover {
+    filter: brightness(90%);
+}
+
+vittoria.hidden {
+    display: none;
+}
+
+#vittoria {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 99;
+    display: none;
+}
+
+#vittoria button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    font-size: 16px;
+    width: 20%;
+    height: 10%;
+}
+
+#vittoria button:hover {
+    background-color: #45a049;
+}
